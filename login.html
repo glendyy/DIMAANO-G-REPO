@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login and Register</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-page">
+
+    <div class="container">
+        
+        <!-- Login Box -->
+        <div class="form-box login-box">
+            <h1>Login</h1>
+            <form action="#">
+                <div class="input-group">
+                    <label for="login-username">Username</label>
+                    <input type="text" id="login-username" placeholder="Enter your username" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="login-password">Password</label>
+                    <input type="password" id="login-password" placeholder="Enter your password" required>
+                </div>
+
+                <div class="login-options">
+                    <label class="remember">
+                        <input type="checkbox"> Remember me
+                    </label>
+                    <a href="#">Forgot password?</a>
+                </div>
+
+                <button type="submit" class="submit-btn">Login</button>
+
+                <p class="account-text">
+                    Don't have an account? <a href="#register">Register</a>
+                </p>
+            </form>
+        </div>
+
+        <!-- Register Box -->
+        <div class="form-box register-box" id="register">
+            <h1>Register</h1>
+            <form action="#">
+                <div class="input-group">
+                    <label for="reg-username">Username</label>
+                    <input type="text" id="reg-username" placeholder="Enter your username" required>
+                </div>
+
+                <div class="input-group">
+                    <label for="reg-email">Email</label>
+                    <input type="email" id="reg-email" placeholder="Enter your email" required>
+                </div>
+                
+                <div class="input-group">
+                    <label for="reg-password">Password</label>
+                    <input type="password" id="reg-password" placeholder="Enter your password" required>
+                </div>
+
+                <button type="submit" class="submit-btn">Register</button>
+
+                <p class="account-text">
+                    Already have an account? <a href="#">Login</a>
+                </p>
+            </form>
+        </div>
+
+    </div>
+
+</body>
+</html>

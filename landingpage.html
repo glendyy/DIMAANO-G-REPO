@@ -1,0 +1,477 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Anime Series</title>
+
+    <style>
+
+        /* =========================
+           PAGE
+        ========================= */
+
+        body {
+            margin: 0;
+            padding: 0;
+
+            background-color: white;
+
+            font-family: Arial, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            min-height: 100vh;
+        }
+
+
+        /* =========================
+           MAIN CONTAINER
+        ========================= */
+
+        .container {
+            width: 770px;
+            height: 560px;
+
+            border: 2px solid black;
+
+            display: grid;
+
+            /*
+                Left = 200px
+                Right = remaining space
+            */
+            grid-template-columns: 200px 1fr;
+
+            box-sizing: border-box;
+
+            overflow: hidden;
+        }
+
+
+        /* =========================
+           LEFT ANIME
+        ========================= */
+
+        .left {
+            border-right: 2px solid black;
+
+            width: 100%;
+            height: 100%;
+
+            overflow: hidden;
+        }
+
+        .left a {
+            display: block;
+
+            width: 100%;
+            height: 100%;
+        }
+
+        .left img {
+            width: 100%;
+            height: 100%;
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        /* =========================
+           RIGHT SIDE
+        ========================= */
+
+        .right {
+            width: 100%;
+            height: 100%;
+
+            display: grid;
+
+            /*
+                4 columns
+            */
+            grid-template-columns: repeat(4, 1fr);
+
+            /*
+                Header + 3 rows
+            */
+            grid-template-rows: 85px repeat(3, 1fr);
+
+            box-sizing: border-box;
+        }
+
+
+        /* =========================
+           HEADER
+        ========================= */
+
+        .header {
+            grid-column: 1 / 5;
+
+            background-color: #141a38;
+
+            color: white;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            font-size: 30px;
+
+            font-weight: bold;
+
+            border-bottom: 1px solid black;
+        }
+
+
+        /* =========================
+           ANIME BOX
+        ========================= */
+
+        .anime {
+            border: 1px solid black;
+
+            box-sizing: border-box;
+
+            overflow: hidden;
+
+            display: flex;
+
+            flex-direction: column;
+
+            background-color: white;
+        }
+
+
+        /* =========================
+           ANIME IMAGE
+        ========================= */
+
+        .anime img {
+            width: 100%;
+
+            height: calc(100% - 35px);
+
+            object-fit: cover;
+
+            display: block;
+        }
+
+
+        /* =========================
+           ANIME NAME
+        ========================= */
+
+        .anime a {
+            height: 35px;
+
+            display: flex;
+
+            justify-content: center;
+            align-items: center;
+
+            color: blue;
+
+            text-decoration: none;
+
+            font-size: 15px;
+
+            background-color: white;
+        }
+
+        .anime a:hover {
+            text-decoration: underline;
+        }
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <!-- =================================
+         MAIN CONTAINER
+    ================================== -->
+
+    <div class="container">
+
+
+        <!-- =================================
+             LEFT SIDE
+             BLEACH
+        ================================== -->
+
+        <div class="left">
+
+            <a href="https://en.wikipedia.org/wiki/Bleach_(TV_series)"
+               target="_blank">
+
+                <img src="images/bleach.jpg"
+                     alt="Bleach">
+
+            </a>
+
+        </div>
+
+
+
+        <!-- =================================
+             RIGHT SIDE
+        ================================== -->
+
+        <div class="right">
+
+
+            <!-- HEADER -->
+
+            <div class="header">
+                Anime Series
+            </div>
+
+
+
+            <!-- =================================
+                 ROW 1
+            ================================== -->
+
+
+            <!-- ONE PIECE -->
+
+            <div class="anime">
+
+                <img src="images/one-piece.jpg"
+                     alt="One Piece">
+
+                <a href="https://en.wikipedia.org/wiki/One_Piece"
+                   target="_blank">
+
+                    One Piece
+
+                </a>
+
+            </div>
+
+
+
+            <!-- NARUTO -->
+
+            <div class="anime">
+
+                <img src="images/naruto.jpg"
+                     alt="Naruto">
+
+                <a href="https://en.wikipedia.org/wiki/Naruto"
+                   target="_blank">
+
+                    Naruto
+
+                </a>
+
+            </div>
+
+
+
+            <!-- DEMON SLAYER -->
+
+            <div class="anime">
+
+                <img src="images/demon-slayer.jpg"
+                     alt="Demon Slayer">
+
+                <a href="https://en.wikipedia.org/wiki/Demon_Slayer:_Kimetsu_no_Yaiba"
+                   target="_blank">
+
+                    Demon Slayer
+
+                </a>
+
+            </div>
+
+
+
+            <!-- MY HERO ACADEMIA -->
+
+            <div class="anime">
+
+                <img src="images/my-hero-academia.jpg"
+                     alt="My Hero Academia">
+
+                <a href="https://en.wikipedia.org/wiki/My_Hero_Academia"
+                   target="_blank">
+
+                    My Hero Academia
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================
+                 ROW 2
+            ================================== -->
+
+
+            <!-- ATTACK ON TITAN -->
+
+            <div class="anime">
+
+                <img src="images/attack-on-titan.jpg"
+                     alt="Attack on Titan">
+
+                <a href="https://en.wikipedia.org/wiki/Attack_on_Titan"
+                   target="_blank">
+
+                    Attack on Titan
+
+                </a>
+
+            </div>
+
+
+
+            <!-- JUJUTSU KAISEN -->
+
+            <div class="anime">
+
+                <img src="images/jujutsu-kaisen.jpg"
+                     alt="Jujutsu Kaisen">
+
+                <a href="https://en.wikipedia.org/wiki/Jujutsu_Kaisen"
+                   target="_blank">
+
+                    Jujutsu Kaisen
+
+                </a>
+
+            </div>
+
+
+
+            <!-- HAIKYU -->
+
+            <div class="anime">
+
+                <img src="images/haikyu.jpg"
+                     alt="Haikyu">
+
+                <a href="https://en.wikipedia.org/wiki/Haikyu!!"
+                   target="_blank">
+
+                    Haikyu
+
+                </a>
+
+            </div>
+
+
+
+            <!-- SPY X FAMILY -->
+
+            <div class="anime">
+
+                <img src="images/spy-x-family.jpg"
+                     alt="Spy x Family">
+
+                <a href="https://en.wikipedia.org/wiki/Spy_%C3%97_Family"
+                   target="_blank">
+
+                    Spy x Family
+
+                </a>
+
+            </div>
+
+
+
+            <!-- =================================
+                 ROW 3
+            ================================== -->
+
+
+            <!-- DEATH NOTE -->
+
+            <div class="anime">
+
+                <img src="images/death-note.jpg"
+                     alt="Death Note">
+
+                <a href="https://en.wikipedia.org/wiki/Death_Note"
+                   target="_blank">
+
+                    Death Note
+
+                </a>
+
+            </div>
+
+
+
+            <!-- FULLMETAL ALCHEMIST -->
+
+            <div class="anime">
+
+                <img src="images/fullmetal-alchemist.jpg"
+                     alt="Fullmetal Alchemist">
+
+                <a href="https://en.wikipedia.org/wiki/Fullmetal_Alchemist"
+                   target="_blank">
+
+                    Fullmetal Alchemist
+
+                </a>
+
+            </div>
+
+
+
+            <!-- DRAGON BALL -->
+
+            <div class="anime">
+
+                <img src="images/dragon-ball.jpg"
+                     alt="Dragon Ball">
+
+                <a href="https://en.wikipedia.org/wiki/Dragon_Ball"
+                   target="_blank">
+
+                    Dragon Ball
+
+                </a>
+
+            </div>
+
+
+
+            <!-- BLACK CLOVER -->
+
+            <div class="anime">
+
+                <img src="images/black-clover.jpg"
+                     alt="Black Clover">
+
+                <a href="https://en.wikipedia.org/wiki/Black_Clover"
+                   target="_blank">
+
+                    Black Clover
+
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+
+</body>
+</html>

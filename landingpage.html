@@ -12,18 +12,15 @@
             background-color: #f8f9fa;
         }
 
-        /* Hero Section */
+        /* Hero Section Background Image */
         .hero-section {
-            background: linear-gradient(135deg, #e0f2fe 0%, #bae6fd 100%);
+            background-image: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)), url('https://wallpapers.com/images/featured/studio-ghibli-tykbiycf0hjhjo39.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
             min-height: 80vh;
             display: flex;
             align-items: center;
-        }
-
-        .hero-img {
-            max-width: 100%;
-            height: auto;
-            filter: drop-shadow(0 10px 15px rgba(0,0,0,0.1));
         }
 
         /* Movie Feature Cards */
@@ -53,11 +50,11 @@
         }
 
         .card-totoro {
-            background: url('https://th.bing.com/th/id/R.338e7ad5678f236f7e696e71b5eab4cb?rik=JnZwzqwjqxM3fA&riu=http%3a%2f%2fprovidencechildrensfilmfestival.org%2fwp-content%2fuploads%2f2015%2f08%2fmy-neighbor-totoro-wallpaper-gd.jpg&ehk=OpTwj4NFzgCsB1rKRia%2fNlTI8gkuXtXD2JI8n1FE%2fzw%3d&risl=&pid=ImgRaw&r=0');
+            background: url('https://wallpaperaccess.com/full/244946.jpg');
         }
 
         .card-kiki {
-            background: url('https://images.unsplash.com/photo-1534447677768-be436bb09401?q=80&w=1920&auto=format&fit=crop');
+            background: url('https://static1.srcdn.com/wordpress/wp-content/uploads/2016/10/kiki-in-kikis-delivery-service.jpg');
         }
 
         .btn-ghibli {
@@ -102,15 +99,12 @@
         <!-- Hero Section -->
         <section class="hero-section py-5">
             <div class="container">
-                <div class="row align-items-center flex-column-reverse flex-lg-row">
-                    <div class="col-lg-6 mt-4 mt-lg-0 text-center text-lg-start">
-                        <p class="text-muted mb-1 fs-5">スタジオジブリへようこそ</p>
-                        <h1 class="display-4 fw-bold text-dark mb-3">Welcome to Studio Ghibli</h1>
-                        <p class="lead text-secondary mb-4">Discover timeless animated masterpieces filled with magic, wonder, and unforgettable adventures.</p>
+                <div class="row align-items-center">
+                    <div class="col-lg-8 text-center text-lg-start">
+                        <p class="text-light opacity-75 mb-1 fs-5">スタジオジブリへようこそ</p>
+                        <h1 class="display-4 fw-bold text-white mb-3">Welcome to Studio Ghibli</h1>
+                        <p class="lead text-light opacity-90 mb-4">Discover timeless animated masterpieces filled with magic, wonder, and unforgettable adventures.</p>
                         <a href="#totoro" class="btn btn-success btn-lg rounded-pill px-4 me-2">Explore Films</a>
-                    </div>
-                    <div class="col-lg-6 text-center">
-                        <img src="https://images.unsplash.com/photo-1579783902614-a3fb3927b675?q=80&w=800&auto=format&fit=crop" alt="Ghibli Artwork" class="hero-img rounded-4 shadow">
                     </div>
                 </div>
             </div>

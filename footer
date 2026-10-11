@@ -1,0 +1,8 @@
+<footer class="site-footer">
+    <div class="container footer-inner">
+        <p>&copy; <?= date("Y") ?> PHP Practice Project</p>
+        <p>Created for the PHP Include and Regular Expression Validation activity.</p>
+    </div>
+</footer>
+</body>
+</html>
